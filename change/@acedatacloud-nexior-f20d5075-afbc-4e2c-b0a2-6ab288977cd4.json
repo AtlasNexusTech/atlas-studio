@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Point API endpoints to Atlas Studio auth proxy",
+  "packageName": "@acedatacloud/nexior",
+  "email": "laslyalexandre@gmail.com",
+  "dependentChangeType": "patch"
+}
