@@ -37,6 +37,7 @@ const vendorChunkRules: Array<[chunkName: string, matches: (normalizedId: string
 export default defineConfig((config: ConfigEnv) => {
   process.env = { ...process.env, ...loadEnv(config.mode, process.cwd()) };
   return {
+    base: '/atlas-studio/',
     server: {
       host: 'localhost',
       port: 8084,

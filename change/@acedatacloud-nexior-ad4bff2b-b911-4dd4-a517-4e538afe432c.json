@@ -1,0 +1,7 @@
+{
+  "type": "patch",
+  "comment": "Fix base path for /atlas-studio/ deployment",
+  "packageName": "@acedatacloud/nexior",
+  "email": "laslyalexandre@gmail.com",
+  "dependentChangeType": "patch"
+}
