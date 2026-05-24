@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <!--
       `viewport-fit=cover` is required so iOS Safari / Capacitor expose
       `env(safe-area-inset-*)` (notch + home indicator) — without it those
@@ -13,24 +15,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover"
     />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, max-age=0, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <title>Ace Data Cloud - AI Hub</title>
+    <title>Atlas Nexus Studio — IA Agentique</title>
     <meta
       name="description"
-      content="AI-powered creative hub — generate images with Midjourney & Flux, create music with Suno, produce videos with Luma & Sora, chat with GPT, Claude, Gemini & DeepSeek."
+      content="Atlas Nexus Studio — Plateforme IA agentique multi-modèle. Générez images, musique, vidéos et automatisez vos workflows avec GPT, Claude, Gemini, DeepSeek, Midjourney, Flux, Suno, Luma & Sora."
     />
     <meta
       name="keywords"
-      content="AI Hub,Midjourney,Suno,Flux,Luma,Sora,GPT,Claude,Gemini,DeepSeek,AI Image,AI Music,AI Video,AI Chat"
+      content="Atlas Nexus,IA Agentique,AI Studio,Midjourney,Suno,Flux,Luma,Sora,GPT,Claude,Gemini,DeepSeek"
     />
-    <!--
-      Canonical and og:url are set dynamically below so the same bundle, served
-      independently from multiple official hostnames (hub.acedata.cloud,
-      studio.acedata.cloud, hub-test.acedata.cloud), advertises the correct
-      origin instead of always pointing at hub.acedata.cloud.
-    -->
+    <!-- Canonical and og:url set dynamically from current origin -->
     <script>
       (function () {
         try {
@@ -51,25 +45,22 @@
     </script>
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Ace Data Cloud" />
-    <meta property="og:title" content="Ace Data Cloud - AI Hub" />
+    <meta property="og:site_name" content="Atlas Nexus" />
+    <meta property="og:title" content="Atlas Nexus Studio — IA Agentique" />
     <meta
       property="og:description"
-      content="AI-powered creative hub — generate images with Midjourney & Flux, create music with Suno, produce videos with Luma & Sora, chat with GPT, Claude, Gemini & DeepSeek."
+      content="Atlas Nexus Studio — Plateforme IA agentique multi-modèle. Générez images, musique, vidéos et automatisez vos workflows."
     />
-    <meta property="og:image" content="https://cdn.acedata.cloud/1903555eb6.png" />
+    <meta property="og:image" content="https://atlasnexus.tech/logo.png" />
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Ace Data Cloud - AI Hub" />
+    <meta name="twitter:title" content="Atlas Nexus Studio — IA Agentique" />
     <meta
       name="twitter:description"
-      content="AI-powered creative hub — generate images with Midjourney & Flux, create music with Suno, produce videos with Luma & Sora, chat with GPT, Claude, Gemini & DeepSeek."
+      content="Atlas Nexus Studio — Plateforme IA agentique multi-modèle. Générez images, musique, vidéos et automatisez vos workflows."
     />
-    <meta name="twitter:image" content="https://cdn.acedata.cloud/1903555eb6.png" />
-    <link rel="icon" href="/src/images/favicon.ico" />
-    <!-- Preconnect to critical origins -->
-    <link rel="preconnect" href="https://cdn.acedata.cloud" crossorigin />
-    <link rel="dns-prefetch" href="https://platform.acedata.cloud" />
+    <meta name="twitter:image" content="https://atlasnexus.tech/logo.png" />
+    <link rel="icon" href="/favicon.ico" />
     <!-- Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -123,26 +114,6 @@
           document.documentElement.style.colorScheme = resolvedTheme === 'dark' ? 'dark' : 'light';
         } catch (e) {
           /* no-op */
-        }
-      })();
-    </script>
-    <script>
-      var _hmt = _hmt || [];
-      // Defer Baidu analytics so it never blocks initial paint or competes for
-      // bandwidth with the application bundle. `requestIdleCallback` lets the
-      // browser pick an idle moment; `setTimeout` is a fallback for Safari.
-      (function () {
-        var inject = function () {
-          var hm = document.createElement('script');
-          hm.async = true;
-          hm.src = 'https://hm.baidu.com/hm.js?6216b5ba30d8e35b2319b4c0331cbf21';
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(hm, s);
-        };
-        if ('requestIdleCallback' in window) {
-          requestIdleCallback(inject, { timeout: 4000 });
-        } else {
-          setTimeout(inject, 2000);
         }
       })();
     </script>
