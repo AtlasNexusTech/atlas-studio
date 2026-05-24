@@ -27,9 +27,7 @@
     />
     <!--
       Canonical and og:url are set dynamically below so the same bundle, served
-      independently from multiple official hostnames (hub.acedata.cloud,
-      studio.acedata.cloud, hub-test.acedata.cloud), advertises the correct
-      origin instead of always pointing at hub.acedata.cloud.
+      canonical URL set dynamically from current origin.
     -->
     <script>
       (function () {
@@ -57,7 +55,7 @@
       property="og:description"
       content="AI-powered creative hub — generate images with Midjourney & Flux, create music with Suno, produce videos with Luma & Sora, chat with GPT, Claude, Gemini & DeepSeek."
     />
-    <meta property="og:image" content="https://cdn.acedata.cloud/1903555eb6.png" />
+    <meta property="og:image" content="https://atlasnexus.tech/logo.png" />
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Atlas Nexus Studio — IA Agentique" />
@@ -65,11 +63,9 @@
       name="twitter:description"
       content="AI-powered creative hub — generate images with Midjourney & Flux, create music with Suno, produce videos with Luma & Sora, chat with GPT, Claude, Gemini & DeepSeek."
     />
-    <meta name="twitter:image" content="https://cdn.acedata.cloud/1903555eb6.png" />
+    <meta name="twitter:image" content="https://atlasnexus.tech/logo.png" />
     <link rel="icon" href="/src/images/favicon.ico" />
     <!-- Preconnect to critical origins -->
-    <link rel="preconnect" href="https://cdn.acedata.cloud" crossorigin />
-    <link rel="dns-prefetch" href="https://platform.acedata.cloud" />
     <!-- Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
